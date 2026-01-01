@@ -1,0 +1,132 @@
+/* ======================
+   THEME VARIABLES
+====================== */
+:root {
+  --bg: #f4f4f4;
+  --text: #222222;
+  --card: #ffffff;
+  --header: #2c3e50;
+  --nav: #3498db;
+  --accent: #1abc9c;
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #f1f1f1;
+  --card: #1e1e1e;
+  --header: #1f1f1f;
+  --nav: #b388ff;
+  --accent: #9b6ef3;
+}
+
+/* ======================
+   RESET & BASE
+====================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ======================
+   HEADER & NAV
+====================== */
+header {
+  background-color: var(--header);
+  color: #ffffff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+nav {
+  background-color: var(--nav);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ======================
+   GRID LAYOUT (WEEK 5)
+====================== */
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* ======================
+   CARDS / SECTIONS
+====================== */
+section {
+  background-color: var(--card);
+  color: var(--text);
+  padding: 2rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section h2,
+section p,
+section li,
+section label {
+  color: var(--text);
+}
+
+section img {
+  width: 150px;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+/* ======================
+   FORM
+====================== */
+input,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  background-color: var(--bg);
+  color: var(--text);
+  border: 1px solid #777;
+}
+
+/* ======================
+   BUTTONS
+====================== */
+button {
+  background-color: var(--accent);
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* ======================
+   FOOTER
+====================== */
+footer {
+  background-color: var(--header);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}

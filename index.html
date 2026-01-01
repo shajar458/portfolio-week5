@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+   <button id="themeToggle">Toggle Theme</button>
+</header>
+
+<nav>
+    <a href="#about">About</a> |
+    <a href="#skills">Skills</a> |
+    <a href="#contact">Contact</a>
+</nav>
+
+
+<main class="main-grid">
+
+<section id="about" class="card">
+    <h2>About Me</h2>
+    <p>I am a student learning web development. This is my first HTML project.</p>
+    <img src="images/profile.JPG" alt="Profile photo" width="150">
+</section>
+
+<section id="skills" class="card">
+    <h2>Skills</h2>
+    <button onclick="toggleSkills()">Show / Hide Skills</button>
+    <ul id="skillsList" class="skills-list">
+  <li>HTML</li>
+  <li>CSS (Basic)</li>
+  <li>Java</li>
+</ul>
+
+</section>
+
+<section id="contact" class="card">
+    <h2>Contact Me</h2>
+    <form onsubmit="validateForm(event)">
+        <label>Name:</label><br>
+        <input type="text" id="name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" id="email"><br><br>
+
+        <label>Message:</label><br>
+        <textarea id="message"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+        <p id="form-msg"></p>
+    </form>
+</section>
+
+</main>
+
+
+<footer>
+    <p>© 2025 My Portfolio</p>
+</footer>
+<script src="js/theme-switcher.js"></script>
+
+</body>
+</html>

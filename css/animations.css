@@ -1,0 +1,56 @@
+section {
+  animation: fadeUp 0.5s ease;
+}
+
+button {
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Card hover animation */
+section {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+/* Page load animation */
+section {
+  animation: fadeUp 0.6s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skills-list {
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.hidden {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
